@@ -29,24 +29,12 @@ alias fix_stty='stty sane'                  # fix_stty:     Restore terminal set
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 alias src='source ~/.bashrc'                # src:          Reload .bashrc file
 
-alias uu='sudo snap refresh && sudo apt update && sudo apt dist-upgrade'
-alias tr='mtr --curse'
-
 #   -----------------------------
 #   2.  GIT
 #   -----------------------------
 
-alias gs='git status '
-alias ga='git add '
-alias gaa='git add .'
-alias gb='git branch '
-alias gc='git commit'
-alias gcf='git commit --fixup HEAD'
-alias gp='git push'
-alias gd='git diff'
+alias gs='git status'
 alias gh='git hist'
-alias ghg='git higr'
-alias gt='git log | tig'
 
 #   -----------------------------
 #   2.  GO TO DIR
@@ -60,24 +48,31 @@ alias gojt='cd ~/prjs/jetskipro-tools'
 alias gorw='cd ~/prjs/railway-client'
 alias gotc='cd ~/prjs/typechess'
 alias gotr='cd ~/prjs/traffic-cloud/dev/new_frontend'
+alias goomb='cd ~/.oh-my-bash'
+
+#   -----------------------------
+#   3.  YARN
+#   -----------------------------
 
 alias ya='yarn add'
 alias yr='yarn remove'
+
+#   -----------------------------
+#   4.  SSH
+#   -----------------------------
+
+alias sshdev='ssh devteam@94.23.147.119'
+alias sshven='ssh vendetta@94.23.147.119'
+alias sshu='ssh vskolos@92.53.96.13'
+
+alias uu='sudo snap refresh && sudo apt update && sudo apt dist-upgrade'
+alias tr='mtr --curse'
+
+alias rcb='vim ~/.bashrc'
+alias rcv='vim ~/.vimrc'
 
 alias cda='composer dumpautoload'
 alias amf='cda && sudo -u www-data php artisan migrate:fresh --seed'
 alias ss='eval `ssh-agent -s` && ssh-add'
 alias trg='mtr --curse 8.8.8.8'
 
-alias sshdev='ssh devteam@94.23.147.119'
-alias sshven='ssh vendetta@94.23.147.119'
-alias sshu='ssh vskolos@92.53.96.13'
-
-alias runrw='screen -S railway -c $HOME/.screen/rwrc'
-alias runjc='screen -S jsp-client -c $HOME/.screen/jcrc'
-alias runja='screen -S jsp-admin -c $HOME/.screen/jarc'
-alias runna='screen -S node-app -c $HOME/.screen/narc'
-alias runtc='screen -S typechess -c $HOME/.screen/tcrc'
-
-alias rcb='vim ~/.bashrc'
-alias rcv='vim ~/.vimrc'
