@@ -263,8 +263,8 @@ prompt_git() {
             else
                 prompt_segment green gray
             fi
-            
-            PR="$PR$ref$dirt"
+
+            PR="$PR$ref$dirty"
 
             if [[ -n ${dirty} ]] ||
                [[ -n ${stash} ]]; then
@@ -290,7 +290,7 @@ prompt_git() {
 
 git_status_dirty() {
     dirty=$(git status -s 2> /dev/null | tail -n 1)
-    [[ -n $dirty ]] && echo " ●"
+    [[ -n ${dirty} ]] && echo " ●"
 }
 
 git_status_cached() {
