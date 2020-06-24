@@ -64,9 +64,9 @@ alias yr='yarn remove'
 alias sshdev='ssh devteam@94.23.147.119'
 alias sshven='ssh vendetta@94.23.147.119'
 alias sshu='ssh vskolos@92.53.96.13'
+alias sshtr='ssh root@devel.infraforecast.info'
 
 alias uu='sudo snap refresh && sudo apt update && sudo apt dist-upgrade'
-alias tr='mtr --curse'
 
 alias rcb='vim ~/.bashrc'
 alias rcv='vim ~/.vimrc'
@@ -74,5 +74,4 @@ alias rcv='vim ~/.vimrc'
 alias cda='composer dumpautoload'
 alias amf='cda && sudo -u www-data php artisan migrate:fresh --seed'
 alias ss='eval `ssh-agent -s` && ssh-add'
-alias trg='mtr --curse 8.8.8.8'
 
