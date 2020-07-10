@@ -75,3 +75,4 @@ alias cda='composer dumpautoload'
 alias amf='cda && sudo -u www-data php artisan migrate:fresh --seed'
 alias ss='eval `ssh-agent -s` && ssh-add'
 
+alias trg='mtr 8.8.8.8'
