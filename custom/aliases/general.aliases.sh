@@ -37,28 +37,14 @@ alias gs='git status'
 alias gh='git hist'
 
 #   -----------------------------
-#   2.  GO TO DIR
-#   -----------------------------
-
-alias gou='cd ~/prjs/underflower'
-alias gojc='cd ~/prjs/jetskipro-client'
-alias goja='cd ~/prjs/jetskipro-admin'
-alias gojb='cd ~/prjs/jetskipro-api'
-alias gojt='cd ~/prjs/jetskipro-tools'
-alias gorw='cd ~/prjs/railway-client'
-alias gotc='cd ~/prjs/typechess'
-alias gotr='cd ~/prjs/traffic-cloud/dev/new_frontend'
-alias goomb='cd ~/.oh-my-bash'
-
-#   -----------------------------
-#   3.  YARN
+#   2.  YARN
 #   -----------------------------
 
 alias ya='yarn add'
 alias yr='yarn remove'
 
 #   -----------------------------
-#   4.  SSH
+#   3.  SSH
 #   -----------------------------
 
 alias sshdev='ssh devteam@94.23.147.119'
@@ -67,12 +53,12 @@ alias sshu='ssh vskolos@92.53.96.13'
 alias sshtr='ssh root@devel.infraforecast.info'
 
 alias uu='sudo snap refresh && sudo apt update && sudo apt dist-upgrade'
+alias mc='mc --nosubshell'
+alias nc='ncmpcpp'
 
 alias rcb='vim ~/.bashrc'
 alias rcv='vim ~/.vimrc'
 
-alias cda='composer dumpautoload'
-alias amf='cda && sudo -u www-data php artisan migrate:fresh --seed'
 alias ss='eval `ssh-agent -s` && ssh-add'
 
 alias trg='mtr 8.8.8.8'
