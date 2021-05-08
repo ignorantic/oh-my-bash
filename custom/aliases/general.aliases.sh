@@ -28,6 +28,7 @@ alias show_options='shopt'                  # Show_options: display bash options
 alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 alias src='source ~/.bashrc'                # src:          Reload .bashrc file
+alias nc='ncmpcpp'
 
 #   -----------------------------
 #   2.  GIT
@@ -37,24 +38,20 @@ alias gs='git status'
 alias gh='git hist'
 
 #   -----------------------------
-#   2.  YARN
+#   2.  YARN AND NPM
 #   -----------------------------
 
 alias ya='yarn add'
 alias yr='yarn remove'
+alias nrs='npm run start'
 
 #   -----------------------------
 #   3.  SSH
 #   -----------------------------
 
-alias sshdev='ssh devteam@94.23.147.119'
-alias sshven='ssh vendetta@94.23.147.119'
-alias sshu='ssh vskolos@92.53.96.13'
-alias sshtr='ssh root@devel.infraforecast.info'
-
 alias uu='sudo snap refresh && sudo apt update && sudo apt dist-upgrade'
 alias mc='mc --nosubshell'
-alias nc='ncmpcpp'
+alias chromium-browser='chromium-browser --use-gl=desktop'
 
 alias rcb='vim ~/.bashrc'
 alias rcv='vim ~/.vimrc'
